@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-let base_url = "http://msm-restaurant-server/api"
+let base_url = "https://msm-restaurant-server.vercel.app/api"
 
 export const createTable = (formData) => axios.post(`${base_url}/tables/add_tables`,formData);
 export const getTables = (filters) => axios.get(`${base_url}/tables/get_tables/${filters}`);
