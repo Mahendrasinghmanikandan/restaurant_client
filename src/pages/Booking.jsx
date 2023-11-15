@@ -138,7 +138,7 @@ const Booking = () => {
         </Link>
       </div>
       {/* table */}
-      <Table dataSource={bookingData} columns={columns} className="pl-5" />
+      <Table dataSource={bookingData} columns={columns} className="pl-5" pagination={{pageSize:5}} />
     </div>
   );
 };

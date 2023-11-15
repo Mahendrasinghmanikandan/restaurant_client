@@ -192,14 +192,14 @@ const Home = () => {
                 className="w-[300px] h-[400px] rounded shadow-md"
               >
                 <div className="w-[300px] h-[400px] rounded shadow-md">
-                  <figure className="w-[300px] h-[200px] object-cover">
+                  <figure className="w-[300px] h-[200px] flex items-center justify-center">
                     <img
-                      className="rounded object-cover"
+                      className="rounded object-cover h-[200px]"
                       src={res.table_pic}
                       alt=""
                     />
                   </figure>
-                  <div className="p-2 flex flex-col gap-y-2">
+                  <div className="p-2 flex flex-col gap-y-2 h-[200px]">
                     <h1 className="text-lg capitalize">{res.table_name}</h1>
                     <h1>
                       Lorem, ipsum dolor sit amet consectetur adipisicing elit.
@@ -211,7 +211,7 @@ const Home = () => {
                         handleDrawerClick(res.status, res);
                       }}
                       className={`${
-                        res.status ? "secondary_button" : "primary_button"
+                        res.status ? "secondary_button cursor-default" : "primary_button"
                       } w-fit px-2`}
                     >
                       {res.status ? "Booked" : "Book Now"}
