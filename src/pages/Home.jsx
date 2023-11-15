@@ -193,7 +193,7 @@ const Home = () => {
               >
                 <div className="w-[300px] h-[400px] rounded shadow-md">
                   <figure className="w-[300px] h-[200px] flex items-center justify-center">
-                    <img
+                    <Image
                       className="rounded object-cover h-[200px]"
                       src={res.table_pic}
                       alt=""
